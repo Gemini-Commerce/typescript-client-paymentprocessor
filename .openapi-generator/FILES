@@ -1,5 +1,4 @@
 .gitignore
-.openapi-generator-ignore
 PaymentprocessorApi.md
 README.md
 apis/PaymentprocessorApi.ts

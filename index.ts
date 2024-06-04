@@ -12,22 +12,7 @@
  * Do not edit the class manually.
  */
 
-/**
- * 
- * @export
- * @interface PaymentprocessorVoidPaymentResponse
- */
-export interface PaymentprocessorVoidPaymentResponse {
-    /**
-     * 
-     * @type {PaymentprocessorTransaction}
-     * @memberof PaymentprocessorVoidPaymentResponse
-     */
-    'transaction'?: PaymentprocessorTransaction;
-    /**
-     * 
-     * @type {string}
-     * @memberof PaymentprocessorVoidPaymentResponse
-     */
-    'errorMessage'?: string;
-}
+
+export * from "./api";
+export * from "./configuration";
+

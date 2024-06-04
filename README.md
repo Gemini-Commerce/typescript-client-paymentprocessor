@@ -1,4 +1,4 @@
-## @gemini-commerce/typescript-client-paymentprocessor@1.1.1
+## @gemini-commerce/typescript-client-paymentprocessor@1.1.0
 
 This generator creates TypeScript/JavaScript client that utilizes fetch-api.
 
@@ -21,7 +21,7 @@ Navigate to the folder of your consuming project and run one of the following co
 _published:_
 
 ```
-npm install @gemini-commerce/typescript-client-paymentprocessor@1.1.1 --save
+npm install @gemini-commerce/typescript-client-paymentprocessor@1.1.0 --save
 ```
 
 _unPublished (not recommended):_

@@ -166,6 +166,10 @@ export class PaymentprocessorApi extends runtime.BaseAPI {
 
         headerParameters['Content-Type'] = 'application/json';
 
+        if (this.configuration && this.configuration.apiKey) {
+            headerParameters["Authorization"] = this.configuration.apiKey("Authorization"); // Authorization authentication
+        }
+
         const response = await this.request({
             path: `/paymentprocessor.Paymentprocessor/AuthorizePayment`,
             method: 'POST',
@@ -198,6 +202,10 @@ export class PaymentprocessorApi extends runtime.BaseAPI {
         const headerParameters: runtime.HTTPHeaders = {};
 
         headerParameters['Content-Type'] = 'application/json';
+
+        if (this.configuration && this.configuration.apiKey) {
+            headerParameters["Authorization"] = this.configuration.apiKey("Authorization"); // Authorization authentication
+        }
 
         const response = await this.request({
             path: `/paymentprocessor.Paymentprocessor/CreatePaymentMethod`,
@@ -232,6 +240,10 @@ export class PaymentprocessorApi extends runtime.BaseAPI {
 
         headerParameters['Content-Type'] = 'application/json';
 
+        if (this.configuration && this.configuration.apiKey) {
+            headerParameters["Authorization"] = this.configuration.apiKey("Authorization"); // Authorization authentication
+        }
+
         const response = await this.request({
             path: `/paymentprocessor.Paymentprocessor/FinalizePayment`,
             method: 'POST',
@@ -264,6 +276,10 @@ export class PaymentprocessorApi extends runtime.BaseAPI {
         const headerParameters: runtime.HTTPHeaders = {};
 
         headerParameters['Content-Type'] = 'application/json';
+
+        if (this.configuration && this.configuration.apiKey) {
+            headerParameters["Authorization"] = this.configuration.apiKey("Authorization"); // Authorization authentication
+        }
 
         const response = await this.request({
             path: `/paymentprocessor.Paymentprocessor/GetAvailablePaymentMethod`,
@@ -298,6 +314,10 @@ export class PaymentprocessorApi extends runtime.BaseAPI {
 
         headerParameters['Content-Type'] = 'application/json';
 
+        if (this.configuration && this.configuration.apiKey) {
+            headerParameters["Authorization"] = this.configuration.apiKey("Authorization"); // Authorization authentication
+        }
+
         const response = await this.request({
             path: `/paymentprocessor.Paymentprocessor/GetPaymentMethod`,
             method: 'POST',
@@ -330,6 +350,10 @@ export class PaymentprocessorApi extends runtime.BaseAPI {
         const headerParameters: runtime.HTTPHeaders = {};
 
         headerParameters['Content-Type'] = 'application/json';
+
+        if (this.configuration && this.configuration.apiKey) {
+            headerParameters["Authorization"] = this.configuration.apiKey("Authorization"); // Authorization authentication
+        }
 
         const response = await this.request({
             path: `/paymentprocessor.Paymentprocessor/GetPaymentMethodConfiguration`,
@@ -364,6 +388,10 @@ export class PaymentprocessorApi extends runtime.BaseAPI {
 
         headerParameters['Content-Type'] = 'application/json';
 
+        if (this.configuration && this.configuration.apiKey) {
+            headerParameters["Authorization"] = this.configuration.apiKey("Authorization"); // Authorization authentication
+        }
+
         const response = await this.request({
             path: `/paymentprocessor.Paymentprocessor/InitPayment`,
             method: 'POST',
@@ -396,6 +424,10 @@ export class PaymentprocessorApi extends runtime.BaseAPI {
         const headerParameters: runtime.HTTPHeaders = {};
 
         headerParameters['Content-Type'] = 'application/json';
+
+        if (this.configuration && this.configuration.apiKey) {
+            headerParameters["Authorization"] = this.configuration.apiKey("Authorization"); // Authorization authentication
+        }
 
         const response = await this.request({
             path: `/paymentprocessor.Paymentprocessor/ListAvailablePaymentMethods`,
@@ -430,6 +462,10 @@ export class PaymentprocessorApi extends runtime.BaseAPI {
 
         headerParameters['Content-Type'] = 'application/json';
 
+        if (this.configuration && this.configuration.apiKey) {
+            headerParameters["Authorization"] = this.configuration.apiKey("Authorization"); // Authorization authentication
+        }
+
         const response = await this.request({
             path: `/paymentprocessor.Paymentprocessor/ListPaymentMethods`,
             method: 'POST',
@@ -462,6 +498,10 @@ export class PaymentprocessorApi extends runtime.BaseAPI {
         const headerParameters: runtime.HTTPHeaders = {};
 
         headerParameters['Content-Type'] = 'application/json';
+
+        if (this.configuration && this.configuration.apiKey) {
+            headerParameters["Authorization"] = this.configuration.apiKey("Authorization"); // Authorization authentication
+        }
 
         const response = await this.request({
             path: `/paymentprocessor.Paymentprocessor/PerformPayment`,
@@ -496,6 +536,10 @@ export class PaymentprocessorApi extends runtime.BaseAPI {
 
         headerParameters['Content-Type'] = 'application/json';
 
+        if (this.configuration && this.configuration.apiKey) {
+            headerParameters["Authorization"] = this.configuration.apiKey("Authorization"); // Authorization authentication
+        }
+
         const response = await this.request({
             path: `/paymentprocessor.Paymentprocessor/PerformRefund`,
             method: 'POST',
@@ -528,6 +572,10 @@ export class PaymentprocessorApi extends runtime.BaseAPI {
         const headerParameters: runtime.HTTPHeaders = {};
 
         headerParameters['Content-Type'] = 'application/json';
+
+        if (this.configuration && this.configuration.apiKey) {
+            headerParameters["Authorization"] = this.configuration.apiKey("Authorization"); // Authorization authentication
+        }
 
         const response = await this.request({
             path: `/paymentprocessor.Paymentprocessor/UpdatePayment`,
@@ -562,6 +610,10 @@ export class PaymentprocessorApi extends runtime.BaseAPI {
 
         headerParameters['Content-Type'] = 'application/json';
 
+        if (this.configuration && this.configuration.apiKey) {
+            headerParameters["Authorization"] = this.configuration.apiKey("Authorization"); // Authorization authentication
+        }
+
         const response = await this.request({
             path: `/paymentprocessor.Paymentprocessor/UpdatePaymentMethod`,
             method: 'POST',
@@ -594,6 +646,10 @@ export class PaymentprocessorApi extends runtime.BaseAPI {
         const headerParameters: runtime.HTTPHeaders = {};
 
         headerParameters['Content-Type'] = 'application/json';
+
+        if (this.configuration && this.configuration.apiKey) {
+            headerParameters["Authorization"] = this.configuration.apiKey("Authorization"); // Authorization authentication
+        }
 
         const response = await this.request({
             path: `/paymentprocessor.Paymentprocessor/VoidPayment`,
